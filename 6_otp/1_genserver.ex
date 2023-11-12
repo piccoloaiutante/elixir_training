@@ -2,6 +2,7 @@ defmodule Counter do
   # Import of GenServer behaviour
   use GenServer
 
+  #Public API
   # Starting the server
   def create_server(initial_count) do
     # GenServer.start_link(__MODULE__, initial_state, options)
@@ -16,6 +17,7 @@ defmodule Counter do
     GenServer.call(pid, :decrement)
   end
 
+  # GenServer Callbacks
   # GenServer first call initialization callbacks
   def init(initial_count) do
     {:ok, initial_count}
