@@ -1,2 +1,2 @@
-# elixir_training
-A collection of examples for Elixir workshop
+# Elixir training
+A collection of examples for Elixir lecture at TUD in November 2023.
