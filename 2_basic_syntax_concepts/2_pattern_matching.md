@@ -23,16 +23,7 @@ Pattern matching is a fundamental concept in Elixir, as it is in Erlang and many
    {a, _} = {1, 2}  # Only binds 1 to a, ignores 2
    ```
 
-4. **Existing Variables**:
-   When an already bound variable is used in a pattern, it doesn't rebind, but instead enforces the match against its value.
-
-   ```elixir
-   x = 1
-   {x, y} = {1, 2}  # Works fine and binds y to 2
-   {x, y} = {2, 3}  # This will cause a MatchError because x already equals 1
-   ```
-
-5. **Deep Patterns**:
+4. **Deep Patterns**:
    You can pattern match deeply nested data structures.
 
    ```elixir
@@ -40,7 +31,7 @@ Pattern matching is a fundamental concept in Elixir, as it is in Erlang and many
    # Here, n will be "Alice", s1 will be 100, and s2 will be 95
    ```
 
-6. **Head | Tail**:
+5. **Head | Tail**:
    Lists in Elixir can be split into their head (first element) and tail (the rest) using the `|` operator.
 
    ```elixir
@@ -48,7 +39,7 @@ Pattern matching is a fundamental concept in Elixir, as it is in Erlang and many
    # head will be 1, and tail will be [2, 3, 4]
    ```
 
-7. **Function Clauses**:
+6. **Function Clauses**:
    Pattern matching is commonly used in function clauses to execute code based on the shape and content of the arguments.
 
    ```elixir
@@ -58,7 +49,7 @@ Pattern matching is a fundamental concept in Elixir, as it is in Erlang and many
    end
    ```
 
-8. **Control Structures**:
+7. **Control Structures**:
    Pattern matching is also used in case statements and other control structures.
 
    ```elixir
